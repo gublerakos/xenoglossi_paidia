@@ -1,0 +1,282 @@
+/* ##################################################################### */
+/* #                            DESKTOP                                # */
+/* ##################################################################### */
+
+body {
+    background-image: url("images/frontPage.png");
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    background-color:white;
+}
+
+/* ############ Code for the Header ############# */
+
+.header {
+    position: fixed;
+    display: grid; 
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #1f9fba;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 175px 70px 175px 70px 175px 70px 175px 70px 175px 1fr;
+    grid-template-areas: 
+    ". home . languages . crew . offers . contact .";
+}
+
+
+/* ########### Code for top menu bar ############# */
+
+.home {
+    margin-top: 30px;
+    grid-area: home;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.home h1{
+    color: white;
+}
+
+.home h1:hover {
+    color: white;
+}
+
+.languages {
+    margin-top: 30px;
+    grid-area: languages;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.languages h1{
+    color: #166287;
+}
+
+.languages h1:hover {
+    color: white;
+}
+
+.crew {
+    margin-top: 30px;
+    grid-area: crew;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.crew h1{
+    color: #166287;
+}
+
+.crew h1:hover {
+    color: white;
+}
+
+.offers {
+    margin-top: 30px;
+    grid-area: offers;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.offers h1{
+    color: #166287;
+}
+
+.offers h1:hover {
+    color: white;
+}
+
+.contact {
+    margin-top: 30px;
+    grid-area: contact;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.contact h1{
+    color: #166287;
+}
+
+.contact h1:hover {
+    color: white;
+}
+
+.title{
+    margin-top: 200px;
+    width: 100%;
+    height: 450px;
+    background-color: #1f9fba;
+    text-align: center;
+}
+
+.empty {
+    background-color: #1f9fba;
+    height: 50px;
+    width: 100%;
+}
+
+.letters-up {
+    font-size: 25px;
+    color: white;
+}
+
+.letters-middle {
+    font-weight: 500;
+    font-size: 75px;
+    padding: 15px;
+    color: white;
+}
+
+.letters-middle .letter {
+    display: inline;
+    line-height: 1em;
+}
+
+.letters-down {
+    margin-top: 7px;
+    font-size: 30px;
+    color: white;
+}
+
+.empty2 {
+    background-color: #1f9fba;
+    height: 100px;
+    width: 100%;
+}
+
+
+.text {
+    display: inline;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.here {
+    color: #d7933a;
+    display:inline;
+}
+
+.learning {
+    color: #5f54a1;
+    display:inline;
+}
+
+.become {
+    color: #89c64c;
+    display:inline;
+}
+
+.game {
+    color: #c1343e;
+    display:inline;
+}
+
+.front_boxes {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    grid-area: front_boxes;
+    display: grid;
+    grid-auto-rows: 300px;
+    grid-template-columns: 1fr 300px 1fr 300px 1fr 300px 1fr;
+    grid-template-areas:
+    ". kids . students . adults .";
+    width: 100%;
+}
+
+.kids {
+    grid-area: kids;
+    background-color: #fc8f44;
+    width: 97%;		
+    height: 97%;
+    text-align: center;
+    justify-self: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.kids h1 {
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.kids:hover {
+    width: 102%;
+    height: 102%;
+}
+
+.students {
+    grid-area: students;
+    background-color: #fc8f44;
+    width: 97%;
+    height: 97%;
+    text-align: center;
+    justify-self: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+}
+
+.students h1 {
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.students:hover {
+    width: 102%;
+    height: 102%;
+}
+
+.adults {
+    grid-area: adults;
+    background-color: #fc8f44;
+    width: 97%;
+    height: 97%;
+    text-align: center;
+    justify-self: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+}
+
+.adults h1 {
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.adults:hover {
+    width: 102%;
+    height: 102%;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+    position: relative;
+}
+
+/* ##################################################################### */
+/* #                            MOBILE                                 # */
+/* ##################################################################### */
+
+@media screen and (max-width: 824px){
+
+
+}

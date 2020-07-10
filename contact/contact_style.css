@@ -1,0 +1,55 @@
+/* ##################### Code For Header ################### */
+
+body{
+    text-align: center;
+	background-image: url(for_site/letter.jpg);
+	background-color: white;
+    background-size: cover;
+    background-position: center;
+	background-attachment: fixed;
+	background-position-y: 45%;
+    
+}
+
+/* ##################### Code For Contact Form ################### */
+
+form {
+	margin-top: 170px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form_control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: black;
+	font-size: 18px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+	height: 55px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form .submit {
+    border-color: transparent;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+	margin-top: 20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form .submit:hover {
+    cursor: pointer;
+}
+
+input {
+    height: 45px;
+}
+

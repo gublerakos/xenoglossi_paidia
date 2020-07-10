@@ -1,0 +1,517 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+	body{
+	line-height: 1;
+}
+
+	article,aside,details,figcaption,figure,
+	footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+
+	nav ul {
+	list-style:none;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+	/* change colours to suit your needs */
+ins {
+	background-color:#ff9;
+	color:#000;
+	text-decoration:none;
+}
+
+	/* change colours to suit your needs */
+mark {
+	background-color:#ff9;
+	color:#000;
+	font-style:italic;
+	font-weight:bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+	border-bottom:1px dotted;
+	cursor:help;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+	/* change border colour to suit your needs */
+hr {
+	display:block;
+	height:1px;
+	border:0;  
+	border-top:1px solid #cccccc;
+	margin:1em 0;
+	padding:0;
+}
+
+input, select {
+	vertical-align:middle;
+}
+/* ############################################################### */
+/* ###################### code starts here!####################### */
+html {
+	scroll-behavior: smooth;
+}
+	/* ############ Code for the Header ############# */
+
+	.header {
+		position: fixed;
+		top: 0px;
+		width: 100%;
+		height: fit-content;
+		background-color: #1f9fba;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+
+	.letters_up {
+		margin-top: -70px;
+		font-weight: 500;
+		font-size: 20px;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		color: white;
+		padding: 3px;
+	}
+
+	.letters_middle{
+		font-weight: 550;
+		font-size: 50px;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		color: white;
+		padding: 3px;
+	}
+
+	.letters_down {
+		font-weight: 500;
+		font-size: 20px;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		color: white;
+		padding: 3px;
+	}
+	/* ############ Code for the Sidenav bar ############ */
+
+	.container {
+		display: inline-block;
+		cursor: pointer;
+		font-size: 30px;
+	}
+		  
+	.bar1 {
+		margin-left: 10px;
+		margin-top: 35px;
+		width: 35px;
+		height: 5px;
+		background-color: white;
+		transition: 0.4s;
+	}
+
+	.bar2, .bar3 {
+		margin-left: 10px;
+		margin-top: 10px;
+		width: 35px;
+		height: 5px;
+		background-color: white;
+		transition: 0.4s;
+	} 
+
+	.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: rgb(46, 44, 44);
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	}
+	.sidenav a {
+		margin-top: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 25px;
+		color: #ffffff;
+		display: block;
+		transition: 0.3s;
+	}
+	.sidenav a:hover {
+		background-color: #696969;
+	}
+	.sidenav .closebtn {
+		padding: 5px 5px 5px 5px;
+		color: rgb(192, 192, 192);
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 40px;
+		margin-left: 50px;
+	}
+	.sidenav .closebtn:hover {
+		background-color: rgb(46, 44, 44);
+		color: rgb(255, 255, 255);
+    }
+	
+	/* ************************ POP UP ************************ */
+
+	/* Popup container */
+	.popup {
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+	}
+	
+	/* The actual popup (appears on top) */
+	.popup .popuptext {
+		margin-top: -10px;
+		visibility: hidden;
+		width: 300px;
+		background-color: #555;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 8px 0;
+		position: absolute;
+		z-index: 1;
+		left: 50%;
+		margin-left: -150px;
+		top: 100%;
+	}
+	
+	/* Popup arrow */
+	.popup .popuptext::after {
+		content: " ";
+		position: absolute;
+		bottom: 100%;  /* At the top of the tooltip */
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent transparent #555 transparent;
+	}
+	
+	/* Toggle this class when clicking on the popup container (hide and show the popup) */
+	.popup .show {
+		visibility: visible;
+		-webkit-animation: fadeIn 1s;
+		animation: fadeIn 1s
+	}
+	
+	/* Add animation (fade in the popup) */
+	@-webkit-keyframes fadeIn {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+	
+	@keyframes fadeIn {
+		from {opacity: 0;}
+		to {opacity:1 ;}
+	}
+
+    /* *************** Code for the first grid ****************** */
+	.languages1 {
+		display: grid;
+		margin-top: 150px;
+		grid-auto-rows: 220px;
+		grid-template-columns: 1fr 300px 1fr 300px 1fr 300px 1fr;
+		grid-template-areas: 
+		". french . english . italian .";
+		align-content: center;
+		width: 100%;
+		justify-self: center;
+	}
+
+	.languages2 {
+		display: grid;
+		grid-auto-rows: 220px;
+		grid-template-columns: 1fr 300px 1fr 300px 1fr;
+		grid-template-areas: 
+		". german . russian .";
+		align-content: center;
+		justify-self: center;
+		width: 100%;
+	}
+
+	.languages3 {
+		display: grid;
+		/* margin-top: 150px; */
+		grid-auto-rows: 220px;
+		grid-auto-columns: 1fr 300px 1fr 300px 1fr 300px 1fr 300px 1fr;
+		grid-template-areas: 
+		". turkish . spanish . chinese .";
+		align-content: center;
+		justify-self: center;
+		width: 100%;
+	}
+
+	.english h1 {
+		margin-top: -40px;
+		font-size: 30px;
+		font-weight: 100;
+	}
+
+	.english h2 {
+		width: 300px;
+	}
+
+	.english {
+		margin-top: 50px;
+		grid-area: english;
+		/* font-size: 20px; */
+		width: 300px;
+		height: 200px;
+		background-color: rgba(0, 0, 0, 0);
+		justify-self: center;
+		text-align: center;
+		background-image: url("flags/england.jpg");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		border:2px solid black;
+	}
+
+	.french h1 {
+		margin-top: -40px;
+		font-size: 30px;
+		font-weight: 100;
+	}
+
+	.french h2 {
+		width: 300px;
+	}
+
+	.french {
+		margin-top: 50px;
+		grid-area: french;
+		/* font-size: 20px; */
+		width: 300px;
+		height: 200px;
+		background-color: rgba(0, 0, 0, 0);
+		justify-self: center;
+		text-align: center;
+		background-image: url("flags/france.jpg");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		border:2px solid black;
+	}
+
+	.german h1 {
+		margin-top: -40px;
+		font-size: 30px;
+		font-weight: 100;
+	}
+
+	.german h2 {
+		width: 300px;
+	}
+
+	.german {
+		margin-top: 70px;
+		grid-area: german;
+		/* font-size: 20px; */
+		width: 300px;
+		height: 200px;
+		background-color: rgba(0, 0, 0, 0);
+		justify-self: center;
+		text-align: center;
+		background-image: url("flags/germany.jpg");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		border:2px solid black;
+	}
+
+	.italian h1 {
+		margin-top: -40px;
+		font-size: 30px;
+		font-weight: 100;
+	}
+
+	.italian h2 {
+		width: 300px;
+	}
+
+	.italian {
+		margin-top: 50px;
+		grid-area: italian;
+		/* font-size: 20px; */
+		width: 300px;
+		height: 200px;
+		background-color: rgba(0, 0, 0, 0);
+		justify-self: center;
+		text-align: center;
+		background-image: url("flags/italy.jpg");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		border:2px solid black;
+	}
+
+	.spanish h1 {
+		margin-top: -40px;
+		font-size: 30px;
+		font-weight: 100;
+	}
+
+	.spanish h2 {
+		width: 300px;
+	}
+
+	.spanish {
+		margin-top: 90px;
+		grid-area: spanish;
+		/* font-size: 20px; */
+		width: 300px;
+		height: 200px;
+		background-color: rgba(0, 0, 0, 0);
+		justify-self: center;
+		text-align: center;
+		background-image: url("flags/spain.jpg");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		border:2px solid black;
+	}
+
+	.turkish h1 {
+		margin-top: -40px;
+		font-size: 30px;
+		font-weight: 100;
+	}
+
+	.turkish h2 {
+		width: 300px;
+	}
+
+	.turkish {
+		margin-top: 90px;
+		grid-area: turkish;
+		/* font-size: 20px; */
+		width: 300px;
+		height: 200px;
+		background-color: rgba(0, 0, 0, 0);
+		justify-self: center;
+		text-align: center;
+		background-image: url("flags/turkey.jpg");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		border:2px solid black;
+	}
+
+	.russian h1 {
+		margin-top: -40px;
+		font-size: 30px;
+		font-weight: 100;
+	}
+
+	.russian h2 {
+		width: 300px;
+	}
+
+	.russian {
+		margin-top: 70px;
+		grid-area: russian;
+		/* font-size: 20px; */
+		width: 300px;
+		height: 200px;
+		background-color: rgba(0, 0, 0, 0);
+		justify-self: center;
+		text-align: center;
+		background-image: url("flags/russia.jpg");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		border:2px solid black;
+	}
+	
+
+	.chinese h1 {
+		margin-top: -40px;
+		font-size: 30px;
+		font-weight: 100;
+	}
+
+	.chinese h2 {
+		width: 300px;
+	}
+
+	.chinese {
+		margin-top: 90px;
+		grid-area: chinese;
+		/* font-size: 20px; */
+		width: 300px;
+		height: 200px;
+		background-color: rgba(0, 0, 0, 0);
+		justify-self: center;
+		text-align: center;
+		background-image: url("flags/china.jpg");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		border:2px solid black;
+	}

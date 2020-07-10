@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Contact Form</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../css/shadow.css">
+	<link rel="stylesheet" href="contact_style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<script src="../js/header.js"></script>
+	
+
+	<div class="shadow contact_form">
+		<form id="contact_form" method="post" action="contact_form_handler.php">
+			<input type="text" name="name" class="form_control" placeholder="Ονοματεπώνυμο" required><br>
+
+			<input type="text" name="email" class="form_control" placeholder="Email" required><br>
+
+			<textarea name="message" class="form_control" placeholder="Μήνυμα" rows="4" required></textarea><br>
+
+			<input type="submit" name="" class="form_control submit" value="ΑΠΟΣΤΟΛΗ">
+		</form>
+	</div>
+
+<!-- ####################################################################
+***************************** SCRIPTS ******************************* -->
+
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "320px";
+		}
+			
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ξενόγλωσση Παιδεία</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="languages_style.css">
+	<link rel="sortcut icon" type="image/png" href="images/icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<!-- ############################ HEADER ############################## -->
+	<div class="header">
+		<!-- Code for the nav buttons -->
+		<div class="container" onclick="openNav()">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+		
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="languages.html">Γλώσσες</a>
+			<a href="offers.html">Προσφορές</a>
+			<a href="crew.html">Καθηγητές</a>
+		</div>		
+
+		<a href="index.html">
+			<h1 class="letters_up" >Κεντρα Ξενων Γλωσσων</h1>
+			<h1 class="letters_middle" >Ξενογλωσση Παιδεια</h1>
+			<h1 class="letters_down" >School Of Foreign Languages</h1>
+		</a>
+		
+	</div>
+
+	<div class="wrapper">
+		<div class="languages1">
+			<div class="french" onclick="myFunction2()">
+				<h1>Γαλλικά</h1>
+					<div class="popup">
+						<span class="popuptext" id="myPopup2">
+							<h2>Γιατί να μάθω γαλλικά;</h2></span></div>
+			</div>
+			<div class="english" onclick="myFunction1()">
+				<h1>Αγγλικά</h1>
+				<div class="popup">
+					<span class="popuptext" id="myPopup1">
+						<h2>text</h2></span></div>
+			</div>
+			<div class="italian" onclick="myFunction4()">
+				<h1>Ιταλικά</h1>
+					<div class="popup">
+						<span class="popuptext" id="myPopup4">
+							<h2>text</h2></span></div>
+			</div>
+		</div>
+		<div class="languages2">
+			<div class="german" onclick="myFunction3()">
+				<h1>Γερμανικά</h1>
+				<div class="popup">
+				<span class="popuptext" id="myPopup3">
+					<h2>text</h2></span></div>
+			</div>
+			<div class="russian" onclick="myFunction7()">
+				<h1>Ρωσσικά</h1>
+					<div class="popup">
+						<span class="popuptext" id="myPopup7">
+							<h2>text</h2></span></div>
+			</div>
+		</div>
+		<div class="languages3">
+			<div class="turkish" onclick="myFunction6()">
+				<h1>Τουρκικά</h1>
+				<div class="popup">
+					<span class="popuptext" id="myPopup6">
+						<h2>text</h2></span></div>
+			</div>
+			<div class="spanish" onclick="myFunction5()">
+				<h1>Ισπανικά</h1>
+					<div class="popup">
+						<span class="popuptext" id="myPopup5">
+							<h2>Geia sou glykoyli</h2></span></div>
+			</div>
+			<div class="chinese" onclick="myFunction8()">
+				<h1>Κινεζικά</h1>
+				<div class="popup">
+					<span class="popuptext" id="myPopup8">
+						<h2>text</h2></span></div>
+			</div>
+		</div>
+	</div>
+
+<!-- ##################################################################
+*************************** SCRIPTS ******************************** -->
+
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "320px";
+		}
+			
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+	<!-- POPUP SCRIPT -->
+	<script>
+		// When the user clicks on <div>, open the popup
+		function myFunction1() {
+			var popup = document.getElementById("myPopup1");
+			popup.classList.toggle("show");
+		}
+		function myFunction2(){	  
+			var popup = document.getElementById("myPopup2");
+			popup.classList.toggle("show");	  		
+		}
+		function myFunction3() {
+			var popup = document.getElementById("myPopup3");
+			popup.classList.toggle("show");
+		}
+		function myFunction4(){	  
+			var popup = document.getElementById("myPopup4");
+			popup.classList.toggle("show");	  		
+		}
+		function myFunction5() {
+			var popup = document.getElementById("myPopup5");
+			popup.classList.toggle("show");
+		}
+		function myFunction6(){	  
+			var popup = document.getElementById("myPopup6");
+			popup.classList.toggle("show");	  		
+		}
+		function myFunction7() {
+			var popup = document.getElementById("myPopup7");
+			popup.classList.toggle("show");
+		}
+		function myFunction8(){	  
+			var popup = document.getElementById("myPopup8");
+			popup.classList.toggle("show");	  		
+		}
+	</script>
+
+    
+</body>
+</html>
