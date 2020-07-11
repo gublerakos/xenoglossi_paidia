@@ -1,12 +1,104 @@
-body {
-	display: grid;
-	align-items: center;
-	grid-template-columns: 100%;
-	grid-template-rows: auto;
-	grid-template-areas:
-	"header"
-	"title"
-	"front_boxes"
-	"footer";
+.topnav{
+    display: none;
 }
 
+.icon {
+	display: none;
+}
+
+.menu {
+    position: sticky;
+    display: grid; 
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #1f9fba;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 175px 70px 175px 70px 175px 70px 175px 70px 175px 1fr;
+    grid-template-areas: 
+    ". home . languages . crew . offers . contact .";
+}
+
+.menu a h1 {
+	color: #166287;
+}
+
+.menu a h1:hover {
+	color: white;
+}
+
+.menu a {
+	margin-top: 30px;
+	text-align: center;
+	text-decoration: none;
+    font-size: 30px;
+}
+
+.home {
+    grid-area: home;
+}
+.languages {
+    grid-area: languages;
+}
+.crew {
+    grid-area: crew;
+}
+.offers {
+    grid-area: offers;
+}
+.contact {
+    grid-area: contact;
+}
+
+/* ##################################################################### */
+/* #                            MOBILE                                 # */
+/* ##################################################################### */
+
+@media screen and (max-width: 824px){
+
+.menu{
+	display: none;
+}
+
+.topnav{
+	display: block;
+	justify-content: center;
+}
+.topnav #mobile {
+	display: none;
+}
+.topnav #mobile a {
+	text-decoration: none;
+	font-size: 20px;
+	display: block;
+}
+.topnav #mobile {
+	position: relative;
+	background-color: #1f9fba;
+	justify-content: center;
+}
+.topnav a {
+	text-decoration: none;
+	text-align: center;
+}
+.topnav h1 {
+	color: #166287;
+}
+.topnav h1:hover {
+	color: white;
+}
+
+
+.icon {
+	padding: 15px 17px;
+	color: white;
+	background: #1f9fba;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+
+
+}

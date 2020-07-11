@@ -1,26 +1,28 @@
 /* ##################### Code For Header ################### */
-
-body{
-    text-align: center;
-	background-image: url(for_site/letter.jpg);
-	background-color: white;
-    background-size: cover;
-    background-position: center;
-	background-attachment: fixed;
-	background-position-y: 45%;
-    
+.title {
+    display: none;
 }
 
+.menu .contact h1 {
+    color: white;
+}
 /* ##################### Code For Contact Form ################### */
 
+
+.content {
+    margin: 40px auto;
+    width: 80%;
+    height: 400px;
+    background-color: white;    
+}
+
 form {
-	margin-top: 170px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
 }
 
 .form_control {
-    width: 600px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.9);
     border: none;
     outline: none;
     border-bottom: 1px solid gray;
@@ -53,3 +55,17 @@ input {
     height: 45px;
 }
 
+
+/* ##################################################################### */
+/* #                            MOBILE                                 # */
+/* ##################################################################### */
+
+@media screen and (max-width: 824px){
+    .title {
+        display: block;
+    }
+
+    .topnav #contact {
+        color: white;
+    }
+}

@@ -10,113 +10,11 @@ body {
     background-color:white;
 }
 
-/* ############ Code for the Header ############# */
-
-.menu {
-    position: fixed;
-    display: grid; 
-    top: 0px;
-    width: 100%;
-    height: 100px;
-    background-color: #1f9fba;
-    grid-auto-rows: auto;
-    grid-template-columns: 1fr 175px 70px 175px 70px 175px 70px 175px 70px 175px 1fr;
-    grid-template-areas: 
-    ". home . languages . crew . offers . contact .";
-}
-
-.topnav{
-    display: none;
-}
-
-.icon {
-	display: none;
-}
-
 /* ########### Code for top menu bar ############# */
 
-.home {
-    margin-top: 30px;
-    grid-area: home;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.home h1{
-    color: white;
-}
-
-.home h1:hover {
-    color: white;
-}
-
-.languages {
-    margin-top: 30px;
-    grid-area: languages;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.languages h1{
-    color: #166287;
-}
-
-.languages h1:hover {
-    color: white;
-}
-
-.crew {
-    margin-top: 30px;
-    grid-area: crew;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.crew h1{
-    color: #166287;
-}
-
-.crew h1:hover {
-    color: white;
-}
-
-.offers {
-    margin-top: 30px;
-    grid-area: offers;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.offers h1{
-    color: #166287;
-}
-
-.offers h1:hover {
-    color: white;
-}
-
-.contact {
-    margin-top: 30px;
-    grid-area: contact;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.contact h1{
-    color: #166287;
-}
-
-.contact h1:hover {
-    color: white;
-}
 
 .title{
-    margin-top: 200px;
+    margin-top: 150px;
     width: 100%;
     height: 450px;
     background-color: #1f9fba;
@@ -186,8 +84,6 @@ body {
 }
 
 .front_boxes {
-    margin-top: 100px;
-    margin-bottom: 100px;
     grid-area: front_boxes;
     display: grid;
     grid-auto-rows: 300px;
@@ -287,51 +183,6 @@ footer {
 
 @media screen and (max-width: 824px){
 
-    .menu{
-        display: none;
-    }
-
-    .topnav{
-        display: block;
-        justify-content: center;
-    }
-    .topnav #mobile {
-		display: none;
-    }
-    .topnav #mobile a {
-		/* padding: 7px 10px; */
-		text-decoration: none;
-		font-size: 20px;
-		display: block;
-		/* position: relative; */
-    }
-    .topnav #mobile {
-        position: relative;
-        top: 0pxs;
-        background-color: #1f9fba;
-        justify-content: center;
-        grid-template-rows: 5px;
-		grid-template-columns: 300px;
-		grid-template-areas:
-		"."
-		"home"
-		"languages"
-		"crew"
-		"offers"
-		"contact"
-		".";
-    }
-
-    .icon {
-		padding: 15px 17px;
-		color: white;
-		background: #1f9fba;
-		display: block;
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-
     .title {
         margin-top: 0px;
         width: 100%;
@@ -362,7 +213,7 @@ footer {
 
     .front_boxes{
         justify-self: center;
-        width: 95%;
+        /* width: 95%; */
         grid-template-rows: 20px 100px 20px 100px 20px 100px 20px;
         grid-template-columns: 10px auto 10px;
         grid-template-areas:
@@ -376,7 +227,7 @@ footer {
     }
 
     .kids, .students, .adults{
-        margin-top: -70px;
+        /* margin-top: -70px; */
         justify-self: center;
         /* font-size: 20px; */
     }
@@ -385,7 +236,5 @@ footer {
         font-size: 20px;
     }
 
-    footer{
-        /* margin-top: 100px; */
-    }
+
 }

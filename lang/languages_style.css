@@ -2,194 +2,33 @@
 /* #                            DESKTOP                                # */
 /* ##################################################################### */
 
-body {
-    background-image: url("../images/frontPage.png");
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
-    background-color:white;
-}
-
-.menu {
-    position: fixed;
-    display: grid; 
-    top: 0px;
-    width: 100%;
-    height: 100px;
-    background-color: #1f9fba;
-    grid-auto-rows: auto;
-    grid-template-columns: 1fr 175px 70px 175px 70px 175px 70px 175px 70px 175px 1fr;
-    grid-template-areas: 
-    ". home . languages . crew . offers . contact .";
-}
-
-
-.topnav{
+.title {
     display: none;
 }
 
-.icon {
-	display: none;
-}
-
-/* ########### Code for top menu bar ############# */
-
-.home {
-    margin-top: 30px;
-    grid-area: home;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.home h1{
-    color: #166287;
-}
-
-.home h1:hover {
+.menu .languages h1{
     color: white;
 }
 
-.languages {
-    margin-top: 30px;
-    grid-area: languages;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
+.content {
+    margin: 40px auto;
+    width: 80%;
+    height: 400px;
+    background-color: white;    
 }
-
-.languages h1{
-    color: white;
-}
-
-.languages h1:hover {
-    color: white;
-}
-
-.crew {
-    margin-top: 30px;
-    grid-area: crew;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.crew h1{
-    color: #166287;
-}
-
-.crew h1:hover {
-    color: white;
-}
-
-.offers {
-    margin-top: 30px;
-    grid-area: offers;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.offers h1{
-    color: #166287;
-}
-
-.offers h1:hover {
-    color: white;
-}
-
-.contact {
-    margin-top: 30px;
-    grid-area: contact;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.contact h1{
-    color: #166287;
-}
-
-.contact h1:hover {
-    color: white;
-}
-
 /* ##################################################################### */
 /* #                            MOBILE                                 # */
 /* ##################################################################### */
-
 @media screen and (max-width: 824px){
-	.title {
-		background-color: #1f9fba;
-    	text-align: center;
-        margin-top: 0px;
-        width: 100%;
-        height: 150px;
-    }
+.title {
+    display: block;
+}
+.topnav #home {
+    color: #166287;
+}
+.topnav #languages {
+    color: white;
+}
 
-    .letters-up{
-        padding-top: 30px;
-		font-size: 15px;
-		color: white;
-    }
-    .letters-middle{
-        padding: 10px;
-        font-size: 32px;
-		font-weight: 600;
-		color: white;
-    }
-    .letters-down{
-		font-size: 15px;
-		color: white;
-    }
-    .empty{
-        display: none;
-    }
-    .empty2{
-        display: none;
-    }
 
-    .menu{
-        display: none;
-    }
-
-    .topnav{
-        display: block;
-        justify-content: center;
-    }
-    .topnav #mobile {
-		display: none;
-    }
-    .topnav #mobile a {
-		/* padding: 7px 10px; */
-		text-decoration: none;
-		font-size: 20px;
-		display: block;
-		/* position: relative; */
-    }
-    .topnav #mobile {
-        position: relative;
-        top: 0pxs;
-        background-color: #1f9fba;
-        justify-content: center;
-        grid-template-rows: 5px;
-		grid-template-columns: 300px;
-		grid-template-areas:
-		"."
-		"home"
-		"languages"
-		"crew"
-		"offers"
-		"contact"
-		".";
-	}
-	.icon {
-		padding: 15px 17px;
-		color: white;
-		background: #1f9fba;
-		display: block;
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
 }

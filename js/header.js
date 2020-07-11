@@ -1,22 +1,40 @@
-document.write("<div class=\"menu\">");
-document.write("<a href=\"..\/index.html\" class=\"home\">");
-document.write("<h1>Αρχική<\/h1>");
-document.write("<\/a>");
-
-document.write("<a href=\"..\/lang\/languages.html\" class=\"languages\">");
-document.write("<h1>Γλώσσες<\/h1>");
-document.write("<\/a>");
-
-document.write("<a href=\"..\/crew\/crew.html\" class=\"crew\">");
-document.write("<h1>Καθηγητές<\/h1>");
-document.write("<\/a>");
-
-document.write("<a href=\"..\/offers\/offers.html\" class=\"offers\">");
-document.write("<h1>Προσφορές<\/h1>");
-document.write("<\/a>");
-
-document.write("<a href=\"..\/contact\/contact.html\" class=\"contact\">");
-document.write("<h1>Επικοινωνία<\/h1>");
-document.write("<\/a>");
-
-document.write("<\/div>");
+document.write("<header class=\"header\">");
+document.write("            <a href=\"javascript:void(0);\" class=\"icon\" onclick=\"myFunction()\">");
+document.write("                <i class=\"fa fa-bars\"><\/i>");
+document.write("            <\/a>");
+document.write("            ");
+document.write("            <!-- TOP MENU BAR -->");
+document.write("            <div class=\"menu\">");
+document.write("                <a href=\"..\/index.html\" class=\"home\">");
+document.write("                    <h1>Αρχική<\/h1>");
+document.write("                <\/a>");
+document.write("                <a href=\"..\/lang\/languages.html\" class=\"languages\">");
+document.write("                    <h1>Γλώσσες<\/h1>");
+document.write("                <\/a>");
+document.write("                <a href=\"..\/crew\/crew.html\" class=\"crew\">");
+document.write("                    <h1>Καθηγητές<\/h1>");
+document.write("                <\/a>");
+document.write("                <a href=\"..\/offers\/offers.html\" class=\"offers\">");
+document.write("                    <h1>Προσφορές<\/h1>");
+document.write("                <\/a>");
+document.write("                <a href=\"..\/contact\/contact.html\" class=\"contact\">");
+document.write("                    <h1>Επικοινωνία<\/h1>");
+document.write("                <\/a>");
+document.write("            <\/div>");
+document.write("        ");
+document.write("");
+document.write("        <div class=\"title\">");
+document.write("            <div class=\"empty\"><\/div>");
+document.write("            <h2 class=\"letters-up\">ΚΕΝΤΡΑ ΞΕΝΩΝ ΓΛΩΣΣΩΝ<\/h2>");
+document.write("            <h1 class=\"letters-middle\">Ξενόγλωσση Παιδεία<\/h1>");
+document.write("            <h2 class=\"letters-down\">SCHOOL OF FOREIGN LANGUAGES<\/h2>");
+document.write("            <div class=\"empty2\"><\/div>");
+document.write("");
+document.write("            <div class=\"text\">");
+document.write("                <h2 class=\"here\">Εδώ,<\/h2>");
+document.write("                <h2 class=\"learning\"> η εκμάθηση <\/h2>");
+document.write("                <h2 class=\"become\"> γίνεται <\/h2>");
+document.write("                <h2 class=\"game\"> παιχνίδι! <\/h2>");
+document.write("            <\/div>");
+document.write("        <\/div>");
+document.write("    <\/header>");

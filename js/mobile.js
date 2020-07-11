@@ -1,24 +1,25 @@
 document.write("<div class=\"topnav\">");
-document.write("<div id=\"mobile\">");
-document.write("<a href=\"..\/index.html\" class=\"home\">");
-document.write("<h1>Αρχική<\/h1>");
-document.write("<\/a>");
-
-document.write("<a href=\"..\/lang\/languages.html\" class=\"languages\">");
-document.write("<h1>Γλώσσες<\/h1>");
-document.write("<\/a>");
-
-document.write("<a href=\"..\/crew\/crew.html\" class=\"crew\">");
-document.write("<h1>Καθηγητές<\/h1>");
-document.write("<\/a>");
-
-document.write("<a href=\"..\/offers\/offers.html\" class=\"offers\">");
-document.write("<h1>Προσφορές<\/h1>");
-document.write("<\/a>");
-
-document.write("<a href=\"..\/contact\/contact.html\" class=\"contact\">");
-document.write("<h1>Επικοινωνία<\/h1>");
-document.write("<\/a>");
-
-document.write("<\/div>");
-document.write("<\/div>");
+document.write("            <ul id=\"mobile\">");
+document.write("                <a href=\"..\/index.html\">");
+document.write("                    <h1 id=\"home\">Αρχική<\/h1>");
+document.write("                <\/a>");
+document.write("                <br>");
+document.write("                <a href=\"..\/lang\/languages.html\">");
+document.write("                    <h1 id=\"languages\">Γλώσσες<\/h1>");
+document.write("                <\/a>");
+document.write("                <br>");
+document.write("                <a href=\"..\/crew\/crew.html\">");
+document.write("                    <h1 id=\"crew\">Καθηγητές<\/h1>");
+document.write("                <\/a>");
+document.write("                <br>");
+document.write("                <a href=\"..\/offers\/offers.html\">");
+document.write("                    <h1 id=\"offers\">Προσφορές<\/h1>");
+document.write("                <\/a>");
+document.write("                <br>");
+document.write("                <a href=\"..\/contact\/contact.html\">");
+document.write("                    <h1 id=\"contact\">Επικοινωνία<\/h1>");
+document.write("                <\/a>");
+document.write("                <br>");
+document.write("                <br>");
+document.write("            <\/ul>");
+document.write("        <\/div>");

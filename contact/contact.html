@@ -5,6 +5,8 @@
 	<title>Contact Form</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/nav.css">
 	<link rel="stylesheet" href="../style.css">
 	<link rel="stylesheet" href="../css/shadow.css">
 	<link rel="stylesheet" href="contact_style.css">
@@ -15,9 +17,12 @@
 
 	<script src="../js/header.js"></script>
 	
+	<script src="../js/mobile.js"></script>
 
-	<div class="shadow contact_form">
-		<form id="contact_form" method="post" action="contact_form_handler.php">
+	<br>
+
+	<!-- <div class="shadow contact_form"> -->
+		<form class="content shadow" id="contact_form" method="post" action="contact_form_handler.php">
 			<input type="text" name="name" class="form_control" placeholder="Ονοματεπώνυμο" required><br>
 
 			<input type="text" name="email" class="form_control" placeholder="Email" required><br>
@@ -26,21 +31,16 @@
 
 			<input type="submit" name="" class="form_control submit" value="ΑΠΟΣΤΟΛΗ">
 		</form>
-	</div>
+	<!-- </div> -->
+
+	<br>
+
+	<footer></footer>
 
 <!-- ####################################################################
 ***************************** SCRIPTS ******************************* -->
 
-	<script>
-		function openNav() {
-			document.getElementById("mySidenav").style.width = "320px";
-		}
-			
-		function closeNav() {
-			document.getElementById("mySidenav").style.width = "0";
-		}
-	</script>
-
+	<script src="../js/menu.js"></script>
 
 </body>
 </html>
