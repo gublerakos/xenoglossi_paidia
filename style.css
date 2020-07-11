@@ -12,7 +12,7 @@ body {
 
 /* ############ Code for the Header ############# */
 
-.header {
+.menu {
     position: fixed;
     display: grid; 
     top: 0px;
@@ -25,6 +25,13 @@ body {
     ". home . languages . crew . offers . contact .";
 }
 
+.topnav{
+    display: none;
+}
+
+.icon {
+	display: none;
+}
 
 /* ########### Code for top menu bar ############# */
 
@@ -264,12 +271,14 @@ body {
     height: 102%;
 }
 
-.footer {
-    height: 200px;
-    width: 100%;
-    bottom: 0;
-    background-color: black;
-    position: relative;
+footer {
+	display: block;
+	text-align: center;
+	background-color: rgb(0, 0, 0);
+	position: relative;
+	bottom: 0;
+	height: 150px;
+	width: 100%;
 }
 
 /* ##################################################################### */
@@ -278,5 +287,93 @@ body {
 
 @media screen and (max-width: 824px){
 
+    .menu{
+        display: none;
+    }
 
+    .topnav{
+        display: block;
+        justify-content: center;
+    }
+    .topnav #mobile {
+		display: none;
+    }
+    .topnav #mobile a {
+		/* padding: 7px 10px; */
+		text-decoration: none;
+		font-size: 20px;
+		display: block;
+		/* position: relative; */
+    }
+    .topnav #mobile {
+        position: relative;
+        top: 0pxs;
+        background-color: #1f9fba;
+        justify-content: center;
+        grid-template-rows: 5px;
+		grid-template-columns: 300px;
+		grid-template-areas:
+		"."
+		"home"
+		"languages"
+		"crew"
+		"offers"
+		"contact"
+		".";
+    }
+
+    /* .home, .languages, .crew, .offers, .contact{
+        justify-self: left;
+		justify-content: start;
+    } */
+
+    /* #mobile {
+		justify-items: left;
+	} */
+
+    .icon {
+		padding: 15px 17px;
+		color: white;
+		background: #1f9fba;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+    .title {
+        margin-top: 0px;
+        width: 100%;
+        height: 150px;
+    }
+
+    .letters-up{
+        padding-top: 30px;
+        font-size: 15px;
+    }
+    .letters-middle{
+        padding: 10px;
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .letters-down{
+        font-size: 15px;
+    }
+    .text{
+        display: none;
+    }
+    .empty{
+        display: none;
+    }
+    .empty2{
+        display: none;
+    }
+
+    .front_boxes{
+        display: none;
+    }
+
+    footer{
+        margin-top: 500px;
+    }
 }

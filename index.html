@@ -6,29 +6,56 @@
 		<link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/shadow.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="sortcut icon" type="image/png" href="images/icon.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
         <header class="header">
+            
             <!-- TOP MENU BAR -->
-            <a href="index.html" class="home">
-                <h1>Αρχική</h1>
-            </a>
-            <a href="lang/languages.html" class="languages">
-                <h1>Γλώσσες</h1>
-            </a>
-            <a href="crew/crew.html" class="crew">
-                <h1>Καθηγητές</h1>
-            </a>
-            <a href="offers/offers.html" class="offers">
-                <h1>Προσφορές</h1>
-            </a>
-            <a href="contact/contact.html" class="contact">
-                <h1>Επικοινωνία</h1>
-            </a>
+            <div class="menu">
+                <a href="index.html" class="home">
+                    <h1>Αρχική</h1>
+                </a>
+                <a href="lang/languages.html" class="languages">
+                    <h1>Γλώσσες</h1>
+                </a>
+                <a href="crew/crew.html" class="crew">
+                    <h1>Καθηγητές</h1>
+                </a>
+                <a href="offers/offers.html" class="offers">
+                    <h1>Προσφορές</h1>
+                </a>
+                <a href="contact/contact.html" class="contact">
+                    <h1>Επικοινωνία</h1>
+                </a>
+            </div>
+            <div class="topnav">
+                <div id="mobile">
+                    <a href="index.html" class="home">
+                        <h1>Αρχική</h1>
+                    </a>
+                    <a href="lang/languages.html" class="languages">
+                        <h1>Γλώσσες</h1>
+                    </a>
+                    <a href="crew/crew.html" class="crew">
+                        <h1>Καθηγητές</h1>
+                    </a>
+                    <a href="offers/offers.html" class="offers">
+                        <h1>Προσφορές</h1>
+                    </a>
+                    <a href="contact/contact.html" class="contact">
+                        <h1>Επικοινωνία</h1>
+                    </a>
+                </div>
+            </div>
         </header>
 
         <div class="title">
@@ -62,7 +89,10 @@
         </div>
 
 
-        <div class="footer"></div>
+        <footer></footer>
+
+        <script src="js/menu.js"></script>
+
     </body>
     
 </html>
