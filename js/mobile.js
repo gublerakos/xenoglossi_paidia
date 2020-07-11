@@ -1,4 +1,5 @@
-document.write("<div class=\"menu\">");
+document.write("<div class=\"topnav\">");
+document.write("<div id=\"mobile\">");
 document.write("<a href=\"..\/index.html\" class=\"home\">");
 document.write("<h1>Αρχική<\/h1>");
 document.write("<\/a>");
@@ -19,4 +20,5 @@ document.write("<a href=\"..\/contact\/contact.html\" class=\"contact\">");
 document.write("<h1>Επικοινωνία<\/h1>");
 document.write("<\/a>");
 
+document.write("<\/div>");
 document.write("<\/div>");
