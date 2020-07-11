@@ -5,6 +5,7 @@ body {
 	grid-template-rows: auto;
 	grid-template-areas:
 	"header"
+	"title"
 	"front_boxes"
 	"footer";
 }
