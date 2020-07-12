@@ -11,7 +11,7 @@
 }
 
 .content {
-	width: 80%;
+	width: 90%;
 	background-color: white;
 	margin: 40px auto;
 	padding: 5px;
@@ -33,6 +33,7 @@
 }
 
 .crew_members {
+	/* width: 80%; */
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
