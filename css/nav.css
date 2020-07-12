@@ -56,48 +56,48 @@
 
 @media screen and (max-width: 824px){
 
-.menu{
-	display: none;
-}
+	.menu{
+		display: none;
+	}
 
-.topnav{
-	display: block;
-	justify-content: center;
-}
-.topnav #mobile {
-	display: none;
-}
-.topnav #mobile a {
-	text-decoration: none;
-	font-size: 20px;
-	display: block;
-}
-.topnav #mobile {
-	position: relative;
-	background-color: #1f9fba;
-	justify-content: center;
-}
-.topnav a {
-	text-decoration: none;
-	text-align: center;
-}
-.topnav h1 {
-	color: #166287;
-}
-.topnav h1:hover {
-	color: white;
-}
+	.topnav{
+		display: block;
+		justify-content: center;
+	}
+	.topnav #mobile {
+		display: none;
+	}
+	.topnav #mobile a {
+		text-decoration: none;
+		font-size: 20px;
+		display: block;
+	}
+	.topnav #mobile {
+		position: relative;
+		background-color: #1f9fba;
+		justify-content: center;
+	}
+	.topnav a {
+		text-decoration: none;
+		text-align: center;
+	}
+	.topnav h1 {
+		color: #166287;
+	}
+	.topnav h1:hover {
+		color: white;
+	}
 
 
-.icon {
-	padding: 15px 17px;
-	color: white;
-	background: #1f9fba;
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
-}
+	.icon {
+		padding: 15px 17px;
+		color: white;
+		background: #1f9fba;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
 
 
 

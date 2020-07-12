@@ -16,7 +16,7 @@
 	margin: 40px auto;
 	padding: 5px;
 	justify-self: center;
-	
+	text-align: center;
 }
 /* ###################### HOLY SHIT ######################### */
 /* .crew {
@@ -27,14 +27,19 @@
 	". container1 . container2 . container3 .";
 	align-content: center;
 } */
+.content h1{
+	font-size: 45px;
+	padding: 10px;
+}
 
 .crew_members {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
-
+	justify-content: center;
+	flex-direction: row;
 	align-items: center;
 	text-align: center;
+	justify-self: center;
 }
 
 .container1 {
@@ -166,6 +171,182 @@
 	text-align: center;
 }
 
+/* ########## 4 ########### */
+
+.container4 {
+	/* grid-area: container2; */
+	position: relative;
+	width: fit-content;
+	margin-bottom: 20px;
+}
+
+.image4 {
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+
+.overlay4 {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 300px;
+	height:0;
+	transition: .5s ease;
+}
+  
+.container4:hover .overlay4 {
+	bottom: 0;
+	height: 100%;
+}
+
+.text4 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/* ########## 5 ########### */
+
+.container5 {
+	/* grid-area: container2; */
+	position: relative;
+	width: fit-content;
+	margin-bottom: 20px;
+}
+
+.image5 {
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+
+.overlay5 {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 300px;
+	height:0;
+	transition: .5s ease;
+}
+  
+.container5:hover .overlay5 {
+	bottom: 0;
+	height: 100%;
+}
+
+.text5 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/* ########## 6 ########### */
+
+.container6 {
+	/* grid-area: container2; */
+	position: relative;
+	width: fit-content;
+	margin-bottom: 20px;
+}
+
+.image6 {
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+
+.overlay6 {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 300px;
+	height:0;
+	transition: .5s ease;
+}
+  
+.container6:hover .overlay6 {
+	bottom: 0;
+	height: 100%;
+}
+
+.text6 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/* ########## 5 ########### */
+
+.container7 {
+	/* grid-area: container2; */
+	position: relative;
+	width: fit-content;
+	margin-bottom: 20px;
+}
+
+.image7 {
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+
+.overlay7 {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 300px;
+	height:0;
+	transition: .5s ease;
+}
+  
+.container7:hover .overlay7 {
+	bottom: 0;
+	height: 100%;
+}
+
+.text7 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
 
 /* ##################################################################### */
 /* #                            MOBILE                                 # */
@@ -175,4 +356,7 @@
 	.title {
 		display: block;
 	}
+	.content h1{
+        font-size: 30px;
+    }
 }
