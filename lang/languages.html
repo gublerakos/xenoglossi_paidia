@@ -25,43 +25,117 @@
 	<main class="content shadow">
 		<br>
 		<h1>Γλώσσες</h1>
-		<div class="english">
+		<button class="english" onclick="langs_eng()">
 			<h2>ΑΓΓΛΙΚΑ</h2>
-			<p>Click for more!</p>
-		</div>
-		<div class="french">
+			<p id="eng">kalhspera</p>
+		</button>
+		<button class="french" onclick="langs_fre()">
 			<h2>ΓΑΛΛΙΚΑ</h2>
-			<p>Click for more!</p>
-		</div>
-		<div class="german">
+			<p id="fre">kalhspera</p>
+		</button>
+		<button class="german" onclick="langs_ger()">
 			<h2>ΓΕΡΜΑΝΙΚΑ</h2>
-			<p>Click for more!</p>
-		</div>
-		<div class="spanish">
+			<p id="ger">kalhspera</p>
+		</button>
+		<button class="spanish" onclick="langs_spa()">
 			<h2>ΙΣΠΑΝΙΚΑ</h2>
-			<p>Click for more!</p>
-		</div>
-		<div class="italian">
+			<p id="spa">kalhspera</p>
+		</button>
+		<button class="italian" onclick="langs_ita()">
 			<h2>ΙΤΑΛΙΚΑ</h2>
-			<p>Click for more!</p>
-		</div>
-		<div class="turkish">
+			<p id="ita">kalhspera</p>
+		</button>
+		<button class="turkish" onclick="langs_tur()">
 			<h2>ΤΟΥΡΚΙΚΑ</h2>
-			<p>Click for more!</p>
-		</div>
-		<div class="russian">
+			<p id="tur">kalhspera</p>
+		</button>
+		<button class="russian" onclick="langs_rus()">
 			<h2>ΡΩΣΙΚΑ</h2>
-			<p>Click for more!</p>
-		</div>
-		<div class="chinese">
+			<p id="rus">kalhspera <br>ola kala? <br><br><br><br>geia</p>
+		</button>
+		<button class="chinese" onclick="langs_chi()">
 			<h2>ΚΙΝΕΖΙΚΑ</h2>
-			<p>Click for more!</p>
-		</div>
+			<p id="chi">kalhspera ti leei</p>
+		</button>'
 	</main>
 
 	<footer></footer>
 
 	<script src="../js/menu.js"></script>
+	<script>
+		function langs_eng() {
+			var x = document.getElementById("eng");
+			if (x.style.display === "grid") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "grid";
+			}
+		}
+		function langs_fre() {
+			var x = document.getElementById("fre");
+			if (x.style.display === "grid") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "grid";
+			}
+		}
+		function langs_ger() {
+			var x = document.getElementById("ger");
+			if (x.style.display === "grid") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "grid";
+			}
+		}
+		function langs_spa() {
+			var x = document.getElementById("spa");
+			if (x.style.display === "grid") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "grid";
+			}
+		}
+		function langs_ita() {
+			var x = document.getElementById("ita");
+			if (x.style.display === "grid") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "grid";
+			}
+		}
+		function langs_tur() {
+			var x = document.getElementById("tur");
+			if (x.style.display === "grid") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "grid";
+			}
+		}
+		function langs_rus() {
+			var x = document.getElementById("rus");
+			if (x.style.display === "grid") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "grid";
+			}
+		}
+		function langs_chi() {
+			var x = document.getElementById("chi");
+			if (x.style.display === "grid") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "grid";
+			}
+		}
+	</script>
     
 </body>
 </html>

@@ -14,11 +14,11 @@
     display: grid;
     margin: 40px auto;
     width: 90%;
-    height: fit-content;
+    height: fit-content + 200px;
     background-color: white;    
     padding: 5px;
 	justify-self: center;
-    grid-template-rows: auto 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px 75px;
+    grid-template-rows: auto 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px auto;
     grid-template-columns: 30px auto 30px;
     grid-template-areas: 
     ". . ."
@@ -37,61 +37,61 @@
     ". russian ."
     ". . ."
     ". chinese ."
+    ". . ."
     ". . .";
 }
 
 .english{
     font-size: 25px;
     grid-area: english;
-    background-color: rgba(252,143,68, 0.8);
+    background-color: rgb(252,143,68);
     cursor: pointer;
-    
 }
 .french{
     font-size: 25px;
     grid-area: french;
-    background-color: rgba(252,143,68, 0.8);
+    background-color: rgb(252,143,68);
     cursor: pointer;
 }
 .german{
     font-size: 25px;
     grid-area: german;
-    background-color: rgba(252,143,68, 0.8);
+    background-color: rgb(252,143,68);
     cursor: pointer;
 }
 .spanish{
     font-size: 25px;
     grid-area: spanish;
-    background-color: rgba(252,143,68, 0.8);
+    background-color: rgb(252,143,68);
     cursor: pointer;
 }
 .italian{
     font-size: 25px;
     grid-area: italian;
-    background-color: rgba(252,143,68, 0.8);
+    background-color: rgb(252,143,68);
     cursor: pointer;
 }
 .turkish{
     font-size: 25px;
     grid-area: turkish;
-    background-color: rgba(252,143,68, 0.8);
+    background-color: rgb(252,143,68);
     cursor: pointer;
 }
 .russian{
     font-size: 25px;
     grid-area: russian;
-    background-color: rgba(252,143,68, 0.8);
+    background-color: rgb(252,143,68);
     cursor: pointer;
 }
 .chinese{
     font-size: 25px;
     grid-area: chinese;
-    background-color: rgba(252,143,68, 0.8);
+    background-color: rgb(252,143,68);
     cursor: pointer;
 }
 
 .english h2, .french h2, .german h2, .spanish h2, .italian h2, .turkish h2, .russian h2, .chinese h2{
-    padding: 10px;
+    padding: 25px;
 }
 
 .english, .french, .german, .spanish, .italian, .turkish, .russian, .chinese{
@@ -99,6 +99,20 @@
     justify-self: center;
 }
 
+.english #eng p, .french #fre p, .german #ger p, .spanish #spa p, .italian #ita p, .turkish #tur p, .russian #rus p, .chinese #chi p{
+
+    display: block;
+}
+p{
+    display: none;
+}
+
+.english #eng, .french #fre, .german #ger, .spanish #spa, .italian #ita, .turkish #tur, .russian #rus, .chinese #chi{
+    display: none;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7);
+    justify-content: center;
+}
 
 .content h1{
     text-align: center;
