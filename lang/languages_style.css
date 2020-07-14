@@ -122,9 +122,11 @@
         font-size: 30px;
     }
     .content{
+        /* width: 0%; */
         grid-template-rows: auto 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px;
     }
     .english, .french, .german, .spanish, .italian, .turkish, .russian, .chinese{
+        width: 90%;
         font-size: 18px;
     }
 
