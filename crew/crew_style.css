@@ -11,7 +11,7 @@
 }
 
 .content {
-	width: 90%;
+	width: 85%;
 	background-color: white;
 	margin: 40px auto;
 	padding: 5px;
@@ -45,6 +45,7 @@
 
 .container1 {
 	/* grid-area: container1; */
+	margin: 0 20px;
 	position: relative;
 	width: fit-content;
 	margin-bottom: 20px;
@@ -89,6 +90,7 @@
 
 .container2 {
 	/* grid-area: container2; */
+	margin: 0 20px;
 	position: relative;
 	width: fit-content;
 	margin-bottom: 20px;
@@ -132,6 +134,7 @@
 /* ####### 3 ######## */
 .container3 {
 	/* grid-area: container3; */
+	margin: 0 20px;
 	position: relative;
 	width: fit-content;
 	margin-bottom: 20px;
@@ -176,6 +179,7 @@
 
 .container4 {
 	/* grid-area: container2; */
+	margin: 0 20px;
 	position: relative;
 	width: fit-content;
 	margin-bottom: 20px;
@@ -220,6 +224,7 @@
 
 .container5 {
 	/* grid-area: container2; */
+	margin: 0 20px;
 	position: relative;
 	width: fit-content;
 	margin-bottom: 20px;
@@ -264,6 +269,7 @@
 
 .container6 {
 	/* grid-area: container2; */
+	margin: 0 20px;
 	position: relative;
 	width: fit-content;
 	margin-bottom: 20px;
@@ -308,6 +314,7 @@
 
 .container7 {
 	/* grid-area: container2; */
+	margin: 0 20px;
 	position: relative;
 	width: fit-content;
 	margin-bottom: 20px;
