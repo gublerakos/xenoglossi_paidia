@@ -24,22 +24,21 @@
     grid-template-areas: 
     ". . ."
     ". english ."
-    ". . ."
+    ". eng_text ."
     ". french ."
-    ". . ."
+    ". fre_text ."
     ". german ."
-    ". . ."
+    ". ger_text ."
     ". spanish ."
-    ". . ."
+    ". spa_text ."
     ". italian ."
-    ". . ."
+    ". ita_text ."
     ". turkish ."
-    ". . ."
+    ". tur_text ."
     ". russian ."
     ". rus_text ."
     ". chinese ."
-    ". . ."
-    ". . .";
+    ". chi_text .";
 }
 
 .english{
@@ -48,47 +47,94 @@
     background-color: rgb(252,143,68);
     cursor: pointer;
 }
+.eng_text {
+    width: 70%;
+    justify-self: center;
+    grid-area: eng_text;
+}
+
 .french{
     font-size: 25px;
     grid-area: french;
     background-color: rgb(252,143,68);
     cursor: pointer;
 }
+.fre_text {
+    width: 70%;
+    justify-self: center;
+    grid-area: fre_text;
+}
+
 .german{
     font-size: 25px;
     grid-area: german;
     background-color: rgb(252,143,68);
     cursor: pointer;
 }
+.ger_text {
+    width: 70%;
+    justify-self: center;
+    grid-area: ger_text;
+}
+
 .spanish{
     font-size: 25px;
     grid-area: spanish;
     background-color: rgb(252,143,68);
     cursor: pointer;
 }
+.spa_text {
+    width: 70%;
+    justify-self: center;
+    grid-area: spa_text;
+}
+
 .italian{
     font-size: 25px;
     grid-area: italian;
     background-color: rgb(252,143,68);
     cursor: pointer;
 }
+.ita_text{
+    width: 70%;
+    justify-self: center;
+    grid-area: ita_text;
+}
+
 .turkish{
     font-size: 25px;
     grid-area: turkish;
     background-color: rgb(252,143,68);
     cursor: pointer;
 }
+.tur_text {
+    width: 70%;
+    justify-self: center;
+    grid-area: tur_text;
+}
+
 .russian{
     font-size: 25px;
     grid-area: russian;
     background-color: rgb(252,143,68);
     cursor: pointer;
 }
+.russ_text {
+    width: 70%;
+    justify-self: center;
+    grid-area: rus_text;
+}
+
 .chinese{
     font-size: 25px;
     grid-area: chinese;
     background-color: rgb(252,143,68);
     cursor: pointer;
+}
+.chi_text {
+    width: 70%;
+    justify-self: center;
+    grid-area: chi_text;
 }
 
 .english h2, .french h2, .german h2, .spanish h2, .italian h2, .turkish h2, .russian h2, .chinese h2{
@@ -121,9 +167,8 @@ p{
 	padding: 10px;
 }
 
-.russ_text {
-    grid-area: rus_text;
-}
+
+
 /* ##################################################################### */
 /* #                            MOBILE                                 # */
 /* ##################################################################### */
