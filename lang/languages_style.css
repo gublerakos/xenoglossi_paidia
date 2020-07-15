@@ -18,7 +18,8 @@
     background-color: white;    
     padding: 5px;
 	justify-self: center;
-    grid-template-rows: auto 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px auto;
+    grid-template-rows: auto ;
+    /* 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px 75px 20px auto; */
     grid-template-columns: 30px auto 30px;
     grid-template-areas: 
     ". . ."
@@ -35,7 +36,7 @@
     ". turkish ."
     ". . ."
     ". russian ."
-    ". . ."
+    ". rus_text ."
     ". chinese ."
     ". . ."
     ". . .";
@@ -118,6 +119,10 @@ p{
     text-align: center;
 	font-size: 45px;
 	padding: 10px;
+}
+
+.russ_text {
+    grid-area: rus_text;
 }
 /* ##################################################################### */
 /* #                            MOBILE                                 # */
