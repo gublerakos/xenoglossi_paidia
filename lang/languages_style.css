@@ -146,18 +146,16 @@
     justify-self: center;
 }
 
-.english #eng p, .french #fre p, .german #ger p, .spanish #spa p, .italian #ita p, .turkish #tur p, .russian #rus p, .chinese #chi p{
+.english #eng, .french #fre, .german #ger, .spanish #spa, .italian #ita, .turkish #tur, .russian #rus, .chinese #chi{
 
     display: block;
 }
-p{
-    display: none;
-}
 
-.english #eng, .french #fre, .german #ger, .spanish #spa, .italian #ita, .turkish #tur, .russian #rus, .chinese #chi{
+
+.eng_text #eng, .fre_text #fre, .ger_text #ger, .spa_text #spa, .ita_text #ita, .tur_text #tur, .russ_text #rus, .chi_text #chi{
     display: none;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(252,143,68, 0.4);
     justify-content: center;
 }
 
@@ -167,6 +165,17 @@ p{
 	padding: 10px;
 }
 
+#eng h1, #fre h1, #ger h1, #spa h1, #ita h1, #tur h1, #rus h1, #chi h1{
+    font-size: 25px;
+}
+#eng h2, #fre h2, #ger h2, #spa h2, #ita h2, #tur h2, #rus h2, #chi h2{
+    font-size: 20px;
+    
+}
+#eng p, #fre p, #ger p, #spa p, #ita p, #tur p, #rus p, #chi p{
+    font-size: 20px;
+    padding: 5px;
+}
 
 
 /* ##################################################################### */
@@ -186,11 +195,19 @@ p{
         font-size: 30px;
     }
     .content{
-        /* width: 0%; */
-        grid-template-rows: auto 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px;
+        grid-template-columns: 10px auto 10px;
+        /* grid-template-rows: auto 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px; */
+        grid-template-rows: auto;
     }
     .english, .french, .german, .spanish, .italian, .turkish, .russian, .chinese{
         width: 90%;
+        font-size: 18cpx;
+    }
+
+    #eng h1, #fre h1, #ger h1, #spa h1, #ita h1, #tur h1, #rus h1, #chi h1{
+        font-size: 20px;
+    }
+    #eng p, #fre p, #ger p, #spa p, #ita p, #tur p, #rus p, #chi p{
         font-size: 18px;
     }
 
