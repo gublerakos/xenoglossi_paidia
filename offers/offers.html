@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/shadow.css">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="offers.css">
+
+	<title>Προσφορές</title>
+</head>
+<body>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/mobile.js"></script>
+    
+    <main class="content shadow">
+        <h1 class="title2">Προσφορές</h1>
+        <h2 class="title_text">Επιλέξτε την προσφορά που σας ταιριάζει, ανάλογα την ηλικία και την περίοδο που σας ενδιαφέρει. Στην Ξενόγλωσση Παιδεία προσπαθούμε το καλύτερο για εσάς, την παρέα και το οικογενειακό σας περιβάλλον!</h2>
+        
+        <button class="kids_offers" onclick="kid()">
+			<h2>Για μαθητές</h2>
+        </button>
+        <div class="kids_text" id="kid">
+
+
+        </div>
+        <button class="students_offers" onclick="stud()">
+			<h2>Για φοιτητές</h2>
+        </button>
+        <div class="students_text" id="stud">
+
+            
+        </div>
+
+        <button class="adults_offers" onclick="adul()">
+			<h2>Για ενήλικες</h2>
+        </button>
+        <div class="adults_text" id="adul">
+
+            
+        </div>
+
+        <button class="summer_offers" onclick="summ()">
+			<h2>Καλοκαιρινές</h2>
+        </button>
+        <div class="summer_text" id="summer">
+
+            
+        </div>
+
+    </main>
+
+    <footer></footer>
+	
+    <script src="../js/menu.js"></script>
+    <script>
+		function kid() {
+			var x = document.getElementById("kid");
+			if (x.style.display === "grid") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "grid";
+			}
+		}
+    </script>
+	
+</body>
+</html>
