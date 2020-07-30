@@ -15,7 +15,7 @@ document.write("        ");
 document.write("                <\/div>");
 document.write("                <div class=\"information\">");
 document.write("                    <h1>ΒΡΕΙΤΕ ΜΑΣ<h1>");
-document.write("                    -----------------------------------------------");
+document.write("                    -----------------------------------------");
 document.write("                    <p class=\"location\">");
 document.write("                        <img class=\"loc\" src=\"\/icons\/locationIcon.png\" alt=\"location\">");
 document.write("                        Διεύθυνση: Καρτάλη με Γαλλίας<\/p>");

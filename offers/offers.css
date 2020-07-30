@@ -130,4 +130,28 @@
 	.content h1{
         font-size: 30px;
     }
+    .content{
+        padding: 0;
+        width: 96%;
+        grid-template-columns: 5px auto 5px;
+        /* grid-template-rows: auto 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px; */
+        grid-template-rows: auto;
+    }
+    .content .title2{
+        font-size: 30px;
+    }
+    .content .title_text{
+        font-size: 20px;
+    }
+    .gen_offers, .students_offers, .adults_offers, .summer_offers {
+        width: 100%;
+        font-size: 18cpx;
+    }
+    .gen_text, .students_text, .adults_text, .summer_text {
+        width: 100%;
+    }
+    #gen h1, #stud h1, #adul h1, #summer h1 {
+        margin: 10px 10px;
+        font-size: 20px;
+    }
 }
