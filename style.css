@@ -172,15 +172,15 @@ body {
     height: 102%;
 }
 
-footer {
+/* footer {
 	display: block;
 	text-align: center;
 	background-color: rgb(0, 0, 0);
 	position: absolute;
 	bottom: 0;
 	height: 130px;
-    width: 100%;
-}
+  width: 100%;
+} */
 
 /* ##################################################################### */
 /* #                            MOBILE                                 # */

@@ -2,6 +2,32 @@
 /* #                            DESKTOP                                # */
 /* ##################################################################### */
 
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: linear;
+    transition-duration: 0.5s;
+}
+
+.slideshow_container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {display: none;}
+img {
+    vertical-align: middle;
+    margin: 20px auto;
+    /* max-height: 595px; */
+    /* align-self: middle; */
+}
+
 .title {
     display: none;
 }
@@ -48,7 +74,7 @@
     cursor: pointer;
 }
 .eng_text {
-    width: 70%;
+    width: 75%;
     justify-self: center;
     grid-area: eng_text;
 }
@@ -60,7 +86,7 @@
     cursor: pointer;
 }
 .fre_text {
-    width: 70%;
+    width: 75%;
     justify-self: center;
     grid-area: fre_text;
 }
@@ -72,7 +98,7 @@
     cursor: pointer;
 }
 .ger_text {
-    width: 70%;
+    width: 75%;
     justify-self: center;
     grid-area: ger_text;
 }
@@ -84,7 +110,7 @@
     cursor: pointer;
 }
 .spa_text {
-    width: 70%;
+    width: 75%;
     justify-self: center;
     grid-area: spa_text;
 }
@@ -96,7 +122,7 @@
     cursor: pointer;
 }
 .ita_text{
-    width: 70%;
+    width: 75%;
     justify-self: center;
     grid-area: ita_text;
 }
@@ -108,7 +134,7 @@
     cursor: pointer;
 }
 .tur_text {
-    width: 70%;
+    width: 75%;
     justify-self: center;
     grid-area: tur_text;
 }
@@ -120,7 +146,7 @@
     cursor: pointer;
 }
 .russ_text {
-    width: 70%;
+    width: 75%;
     justify-self: center;
     grid-area: rus_text;
 }
@@ -132,7 +158,7 @@
     cursor: pointer;
 }
 .chi_text {
-    width: 70%;
+    width: 75%;
     justify-self: center;
     grid-area: chi_text;
 }
@@ -142,7 +168,7 @@
 }
 
 .english, .french, .german, .spanish, .italian, .turkish, .russian, .chinese{
-    width: 70%;
+    width: 75%;
     justify-self: center;
 }
 
@@ -166,13 +192,16 @@
 }
 
 #eng h1, #fre h1, #ger h1, #spa h1, #ita h1, #tur h1, #rus h1, #chi h1{
+    margin: 0 5%;
     font-size: 25px;
 }
 #eng h2, #fre h2, #ger h2, #spa h2, #ita h2, #tur h2, #rus h2, #chi h2{
+    margin: 0 5%;
     font-size: 20px;
     
 }
 #eng p, #fre p, #ger p, #spa p, #ita p, #tur p, #rus p, #chi p{
+    margin: 0 5%;
     font-size: 20px;
     padding: 5px;
 }
@@ -195,19 +224,26 @@
         font-size: 30px;
     }
     .content{
-        grid-template-columns: 10px auto 10px;
+        padding: 0;
+        width: 96%;
+        grid-template-columns: 5px auto 5px;
         /* grid-template-rows: auto 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px; */
         grid-template-rows: auto;
     }
     .english, .french, .german, .spanish, .italian, .turkish, .russian, .chinese{
-        width: 90%;
+        width: 100%;
         font-size: 18cpx;
+    }
+    .eng_text, .fre_text, .ger_text, .spa_text, .ita_text, .tur_text, .russ_text, .chi_text {
+        width: 100%;
     }
 
     #eng h1, #fre h1, #ger h1, #spa h1, #ita h1, #tur h1, #rus h1, #chi h1{
+        margin: 0 2%;
         font-size: 20px;
     }
     #eng p, #fre p, #ger p, #spa p, #ita p, #tur p, #rus p, #chi p{
+        margin: 0 2%;
         font-size: 18px;
     }
 
