@@ -23,18 +23,18 @@
         <h1 class="title2">Προσφορές</h1>
         <h2 class="title_text">Επιλέξτε την προσφορά που σας ταιριάζει, ανάλογα την ηλικία και την περίοδο που σας ενδιαφέρει. Στην Ξενόγλωσση Παιδεία προσπαθούμε το καλύτερο για εσάς, την παρέα και το οικογενειακό σας περιβάλλον!</h2>
         
-        <button class="kids_offers" onclick="kid()">
-			<h2>Για μαθητές</h2>
+        <button class="gen_offers" onclick="gen()">
+			    <h2>Γενικές</h2>
         </button>
-        <div class="kids_text" id="kid">
-
+        <div class="gen_text" id="gen">
+          <h1>Όλες οι γλώσσες από 35€ το μήνα! </h1>
 
         </div>
         <button class="students_offers" onclick="stud()">
 			<h2>Για φοιτητές</h2>
         </button>
         <div class="students_text" id="stud">
-
+          <h1></h1>
             
         </div>
 
@@ -42,26 +42,55 @@
 			<h2>Για ενήλικες</h2>
         </button>
         <div class="adults_text" id="adul">
+          <h1></h1>
 
-            
         </div>
 
         <button class="summer_offers" onclick="summ()">
 			<h2>Καλοκαιρινές</h2>
         </button>
         <div class="summer_text" id="summer">
-
+          <h1></h1>
             
         </div>
 
     </main>
 
-    <footer></footer>
+    <footer>
+		<script src="/js/footer.js"></script>
+	</footer>
 	
     <script src="../js/menu.js"></script>
     <script>
-		function kid() {
-			var x = document.getElementById("kid");
+		function gen() {
+			var x = document.getElementById("gen");
+			if (x.style.display === "grid") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "grid";
+			}
+    }
+    function stud() {
+			var x = document.getElementById("stud");
+			if (x.style.display === "grid") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "grid";
+			}
+    }
+    function adul() {
+			var x = document.getElementById("adul");
+			if (x.style.display === "grid") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "grid";
+			}
+    }
+    function summ() {
+			var x = document.getElementById("summer");
 			if (x.style.display === "grid") {
 				x.style.display = "none";
 			}

@@ -15,21 +15,21 @@
 }
 
 .content {
-	width: 90%;
+    width: 90%;
 	background-color: white;
 	margin: 40px auto;
     padding: 5px;
 	justify-self: center;
     text-align: center;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 65px 80px 25px auto;
     grid-template-columns: 30px auto 30px;
     grid-template-areas: 
     ". title2 ."
     ". title_text ."
     ". . ."
-    ". kids_offers ."
-    ". kids_text ."
+    ". gen_offers ."
+    ". gen_text ."
     ". students_offers ."
     ". students_text ."
     ". adults_offers ."
@@ -49,8 +49,8 @@
 	padding: 10px;
 }
 
-.kids_offers{
-    grid-area: kids_offers;
+.gen_offers{
+    grid-area: gen_offers;
     background-color: rgb(252,143,68);
     cursor: pointer;
     font-size: 25px;
@@ -85,32 +85,39 @@
     justify-self: center;
     height: 80px;
 }
-.kids_text{
-    grid-area: kids_text;
+.gen_text{
+    grid-area: gen_text;
     width: 70%;
-    /* justify-self: center; */
+    justify-self: center;
 }
 .students_text{
     grid-area: students_text;
     width: 70%;
-    /* justify-self: center; */
+    justify-self: center;
 }
 .adults_text{
     grid-area: adults_text;
     width: 70%;
-    /* justify-self: center; */
+    justify-self: center;
 }
 .summer_text{
     grid-area: summer_text;
     width: 70%;
-    /* justify-self: center; */
+    justify-self: center;
 }
 
-#kid, #stud, #adul, #summer{
+#gen, #stud, #adul, #summer{
     display: none;
     position: relative;
     background-color: rgba(252,143,68, 0.4);
     justify-content: center;
+}
+
+
+#gen h1, #stud h1, #adul h1, #summer h1{
+    /* margin: 0 5%; */
+    margin: 10px 10px;
+    font-size: 25px;
 }
 /* ##################################################################### */
 /* #                            MOBILE                                 # */
