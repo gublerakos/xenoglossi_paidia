@@ -90,6 +90,7 @@
 
 .container2 {
 	/* grid-area: container2; */
+	/* display: none; */
 	margin: 0 20px;
 	position: relative;
 	width: fit-content;
@@ -133,6 +134,7 @@
 
 /* ####### 3 ######## */
 .container3 {
+	/* display: none; */
 	/* grid-area: container3; */
 	margin: 0 20px;
 	position: relative;
@@ -178,6 +180,7 @@
 /* ########## 4 ########### */
 
 .container4 {
+	/* display: none; */
 	/* grid-area: container2; */
 	margin: 0 20px;
 	position: relative;
@@ -223,6 +226,7 @@
 /* ########## 5 ########### */
 
 .container5 {
+	/* display: none; */
 	/* grid-area: container2; */
 	margin: 0 20px;
 	position: relative;
@@ -268,6 +272,7 @@
 /* ########## 6 ########### */
 
 .container6 {
+	/* display: none; */
 	/* grid-area: container2; */
 	margin: 0 20px;
 	position: relative;
@@ -313,6 +318,7 @@
 /* ########## 5 ########### */
 
 .container7 {
+	/* display: none; */
 	/* grid-area: container2; */
 	margin: 0 20px;
 	position: relative;
@@ -355,6 +361,142 @@
 	text-align: center;
 }
 
+/* ####### 8 ######## */
+.container8 {
+	/* display: none; */
+	/* grid-area: container3; */
+	margin: 0 20px;
+	position: relative;
+	width: fit-content;
+	margin-bottom: 20px;
+}
+
+.image8 {
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+
+.overlay8 {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 300px;
+	height:0;
+	transition: .5s ease;
+}
+  
+.container8:hover .overlay8 {
+	bottom: 0;
+	height: 100%;
+}
+
+.text8 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/* ####### 9 ######## */
+.container9 {
+	/* display: none; */
+	/* grid-area: container3; */
+	margin: 0 20px;
+	position: relative;
+	width: fit-content;
+	margin-bottom: 20px;
+}
+
+.image9 {
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+
+.overlay9 {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 300px;
+	height:0;
+	transition: .5s ease;
+}
+  
+.container9:hover .overlay9 {
+	bottom: 0;
+	height: 100%;
+}
+
+.text9 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+/* ####### 10 ######## */
+.container10 {
+	/* display: none; */
+	/* grid-area: container3; */
+	margin: 0 20px;
+	position: relative;
+	width: fit-content;
+	margin-bottom: 20px;
+}
+
+.image10 {
+	display: block;
+	width: 300px;
+	height: 300px;
+}
+
+.overlay10 {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: #008CBA;
+	overflow: hidden;
+	width: 300px;
+	height:0;
+	transition: .5s ease;
+}
+  
+.container10:hover .overlay10 {
+	bottom: 0;
+	height: 100%;
+}
+
+.text10 {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+h2{
+	font-size: 30px;
+}
 
 /* ##################################################################### */
 /* #                            MOBILE                                 # */

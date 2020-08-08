@@ -27,22 +27,39 @@
 			    <h2>Γενικές</h2>
         </button>
         <div class="gen_text" id="gen">
-          <h1>Όλες οι γλώσσες από 35€ το μήνα! </h1>
+          <h1>- Όλες οι γλώσσες με 35€ το μήνα!(Αρχάριοι) </h1>
 
-        </div>
+		</div>
+		<button class="kids_offers" onclick="kid()">
+			<h2>Για μαθητές</h2>
+		</button>
+		<div class="kids_text" id="kids">
+		<h1>- A junior και B junior με 150€ ανά τάξη έως 30 Αυγούστου! <br>
+			- Για δεύτερη ξένη γλώσσα 50% έκπτωση  για όλους τους καινούριους μαθητές μας! <br>
+			- Για όλα τα μέλη της ίδιας οικογένειας 50% έκπτωση για όλους τους καινούριους μαθητές μας!
+		</h1>
+
+		</div>
+
         <button class="students_offers" onclick="stud()">
 			<h2>Για φοιτητές</h2>
         </button>
         <div class="students_text" id="stud">
-          <h1></h1>
+		  <h1>- Lower(B2), proficiency(C2) με 48€ το μήνα!<br>
+			- TOEFL, GMAT, GRE με 50€ το μήνα! <br>
+			- IELTS σε ένα μήνα με 50€. <br>
+		</h1>
             
         </div>
 
         <button class="adults_offers" onclick="adul()">
-			<h2>Για ενήλικες</h2>
+			<h2>Για ενήλικες-εκπαιδευτικούς και δημοσίους υπαλλήλους</h2>
         </button>
         <div class="adults_text" id="adul">
-          <h1></h1>
+		  <h1>- Άμεση μοριοδότηση σε διαγωνισμούς ΑΣΕΠ. <br>
+			- Lower(B2) 48€ μηνιαίως!<br>
+			- Proficiency(C2) 55€ μηνιαίως!<br>
+			</h1>
 
         </div>
 
@@ -50,7 +67,7 @@
 			<h2>Καλοκαιρινές</h2>
         </button>
         <div class="summer_text" id="summer">
-          <h1></h1>
+          <h1>- A junior και B junior </h1>
             
         </div>
 
@@ -64,6 +81,15 @@
     <script>
 		function gen() {
 			var x = document.getElementById("gen");
+			if (x.style.display === "grid") {
+				x.style.display = "none";
+			}
+			else {
+				x.style.display = "grid";
+			}
+	}
+	function kid() {
+			var x = document.getElementById("kids");
 			if (x.style.display === "grid") {
 				x.style.display = "none";
 			}

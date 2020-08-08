@@ -30,6 +30,8 @@
     ". . ."
     ". gen_offers ."
     ". gen_text ."
+    ". kids_offers ."
+    ". kids_text ."
     ". students_offers ."
     ". students_text ."
     ". adults_offers ."
@@ -51,6 +53,15 @@
 
 .gen_offers{
     grid-area: gen_offers;
+    background-color: rgb(252,143,68);
+    cursor: pointer;
+    font-size: 25px;
+    width: 70%;
+    justify-self: center;
+    height: 80px;
+}
+.kids_offers{
+    grid-area: kids_offers;
     background-color: rgb(252,143,68);
     cursor: pointer;
     font-size: 25px;
@@ -90,6 +101,11 @@
     width: 70%;
     justify-self: center;
 }
+.kids_text{
+    grid-area: kids_text;
+    width: 70%;
+    justify-self: center;
+}
 .students_text{
     grid-area: students_text;
     width: 70%;
@@ -106,7 +122,7 @@
     justify-self: center;
 }
 
-#gen, #stud, #adul, #summer{
+#gen, #kids, #stud, #adul, #summer{
     display: none;
     position: relative;
     background-color: rgba(252,143,68, 0.4);
@@ -114,7 +130,7 @@
 }
 
 
-#gen h1, #stud h1, #adul h1, #summer h1{
+#gen h1, #stud h1, #adul h1, #summer h1, #kids h1{
     /* margin: 0 5%; */
     margin: 10px 10px;
     font-size: 25px;
@@ -143,14 +159,14 @@
     .content .title_text{
         font-size: 20px;
     }
-    .gen_offers, .students_offers, .adults_offers, .summer_offers {
+    .gen_offers, .students_offers, .adults_offers, .summer_offers, .kids_offers {
         width: 100%;
         font-size: 18cpx;
     }
-    .gen_text, .students_text, .adults_text, .summer_text {
+    .gen_text, .students_text, .adults_text, .summer_text, .kids_text {
         width: 100%;
     }
-    #gen h1, #stud h1, #adul h1, #summer h1 {
+    #gen h1, #stud h1, #adul h1, #summer h1, #kids h1 {
         margin: 10px 10px;
         font-size: 20px;
     }
