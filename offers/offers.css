@@ -88,6 +88,7 @@
     height: 80px;
 }
 .summer_offers{
+    display: none;
     grid-area: summer_offers;
     background-color: rgb(252,143,68);
     cursor: pointer;
