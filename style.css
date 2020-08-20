@@ -14,6 +14,13 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 0px;
 }
+/* 
+main {
+	width: 80%;
+	margin: 20px auto;
+	padding: 30px 20px;
+} */
+
 
 /* ########### Code for top menu bar ############# */
 
@@ -185,67 +192,8 @@ body {
 	height: 130px;
   width: 100%;
 } */
-.info {
-    display: grid;
-    position: relative;
-    justify-self: center;
-    bottom: 0;
-    /* SOS */
-    /* margin-top: 100%; */
-    width: 100%;
-    height: 200px;
-    background-color: #000;
-    grid-auto-rows: 200px;
-    grid-template-columns: auto;
-    grid-template-areas:
-    ". programms . information .";
-}
-.programms {
-    grid-area: programms;
-    margin-top: 10px;
-    margin-left: 15%;
-    color: white;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    justify-self: center;
-}
-.programms p{
-    padding: 5px;
-}
-.programms a{
-    color: white;
-}
 
-.information {
-    grid-area: information;
-    margin-top: 10px;
-    margin-left: 15%;
-    color: white;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    justify-self: center;
-}
 
-.information p{
-    padding: 5px;
-}
-
-.loc{
-    width: 30px;
-    height: 30px;
-}
-
-.ph{
-    width: 30px;
-    height: 30px;
-}
-
-.em{
-    width: 30px;
-    height: 30px;
-}
 /* ATTEMPT FOR BOOTSTRAP MODAL */
 /* The Modal (background) */
 .modal {
@@ -271,6 +219,14 @@ body {
     border: 1px solid #888;
     width: 60%; /* Could be more or less, depending on screen size */
 }
+
+.modal-title {
+    margin-bottom: 15px;
+}
+
+.modal-body {
+    margin-bottom: 15px;
+}
   
   /* The Close Button */
 .close {
@@ -281,12 +237,59 @@ body {
     font-weight: bold;
 }
   
-  .close:hover,
-  .close:focus {
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
+.more{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.more span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.more span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.more:hover span {
+    padding-right: 25px;
+}
+
+.more:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.more a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
 
 /* ##################################################################### */
 /* #                            MOBILE                                 # */
@@ -361,6 +364,32 @@ body {
     .loc, .ph, .em{
         width: 20px;
         height: 20px;
+    }
+
+    .modal-content {
+        width: 75%;
+        padding: 15px;
+    }
+
+    .modal-title {
+        font-size: 25px;
+        
+    }
+
+    .modal-body p {
+        font-size: 20px;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .more {
+        width: 90%;
+    }
+
+    .more a {
+        font-size: 20px;
     }
 
 }

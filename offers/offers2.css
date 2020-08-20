@@ -1,0 +1,174 @@
+/* ##################################################################### */
+/* #                            DESKTOP                                 # */
+/* ##################################################################### */
+
+.title {
+	display: none;
+}
+
+.menu .offers h1 {
+	color: white;
+}
+
+.topnav #offers {
+	color: white;
+}
+
+.content {
+    width: 90%;
+	background-color: white;
+	margin: 40px auto;
+    padding: 5px;
+	justify-self: center;
+    text-align: center;
+    display: grid;
+    /* grid-template-rows: 65px 80px 25px auto;
+    grid-template-columns: 30px auto 30px;
+    grid-template-areas: 
+    ". title2 ."
+    ". title_text ."
+    ". . ."
+    ". gen_offers ."
+    ". gen_text ."
+    ". kids_offers ."
+    ". kids_text ."
+    ". students_offers ."
+    ". students_text ."
+    ". adults_offers ."
+    ". adults_text ."
+    ". summer_offers ."
+    ". summer_text ."; */
+}
+
+.title2{
+    /* grid-area: title2; */
+	font-size: 45px;
+	padding: 10px;
+}
+.title_text{
+    /* grid-area: title_text; */
+	font-size: 25px;
+	padding: 10px;
+}
+
+.gen_offers{
+    /* grid-area: gen_offers; */
+    background-color: rgb(252,143,68);
+    cursor: pointer;
+    font-size: 25px;
+    width: 70%;
+    justify-self: center;
+    height: 80px;
+}
+.kids_offers{
+    /* grid-area: kids_offers; */
+    background-color: rgb(252,143,68);
+    cursor: pointer;
+    font-size: 25px;
+    width: 70%;
+    justify-self: center;
+    height: 80px;
+}
+.students_offers{
+    /* grid-area: students_offers; */
+    background-color: rgb(252,143,68);
+    cursor: pointer;
+    font-size: 25px;
+    width: 70%;
+    justify-self: center;
+    height: 80px;
+}
+.adults_offers{
+    /* grid-area: adults_offers; */
+    background-color: rgb(252,143,68);
+    cursor: pointer;
+    font-size: 25px;
+    width: 70%;
+    justify-self: center;
+    height: 80px;
+}
+.summer_offers{
+    display: none;
+    /* grid-area: summer_offers; */
+    background-color: rgb(252,143,68);
+    cursor: pointer;
+    font-size: 25px;
+    width: 70%;
+    justify-self: center;
+    height: 80px;
+}
+.gen_text{
+    /* grid-area: gen_text; */
+    width: 70%;
+    justify-self: center;
+}
+.kids_text{
+    /* grid-area: kids_text; */
+    width: 70%;
+    justify-self: center;
+}
+.students_text{
+    /* grid-area: students_text; */
+    width: 70%;
+    justify-self: center;
+}
+.adults_text{
+    /* grid-area: adults_text; */
+    width: 70%;
+    justify-self: center;
+}
+.summer_text{
+    /* grid-area: summer_text; */
+    width: 70%;
+    justify-self: center;
+}
+
+/* #gen, #kids, #stud, #adul, #summer{
+    display: none;
+    position: relative;
+    background-color: rgba(252,143,68, 0.4);
+    justify-content: center;
+} */
+
+
+#gen h1, #stud h1, #adul h1, #summer h1, #kids h1{
+    /* margin: 0 5%; */
+    margin: 10px 10px;
+    font-size: 25px;
+}
+/* ##################################################################### */
+/* #                            MOBILE                                 # */
+/* ##################################################################### */
+
+@media screen and (max-width: 824px){
+	.title {
+		display: block;
+	}
+	.content h1{
+        font-size: 30px;
+    }
+    .content{
+        padding: 0;
+        width: 96%;
+        grid-template-columns: 5px auto 5px;
+        /* grid-template-rows: auto 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px; */
+        grid-template-rows: auto;
+    }
+    .content .title2{
+        font-size: 30px;
+    }
+    .content .title_text{
+        font-size: 20px;
+    }
+    .gen_offers, .students_offers, .adults_offers, .summer_offers, .kids_offers {
+        width: 100%;
+        font-size: 18cpx;
+    }
+    .gen_text, .students_text, .adults_text, .summer_text, .kids_text {
+        width: 100%;
+    }
+    #gen h1, #stud h1, #adul h1, #summer h1, #kids h1 {
+        margin: 10px 10px;
+        font-size: 20px;
+    }
+}
