@@ -23,56 +23,38 @@
         <h1 class="title2">Προσφορές</h1>
         <h2 class="title_text">Επιλέξτε την προσφορά που σας ταιριάζει, ανάλογα την ηλικία και την περίοδο που σας ενδιαφέρει. Στην Ξενόγλωσση Παιδεία προσπαθούμε το καλύτερο για εσάς, την παρέα και το οικογενειακό σας περιβάλλον!</h2>
         
-        <button class="gen_offers" onclick="gen()">
+        <div class="gen_offers">
 			    <h2>Γενικές</h2>
-        </button>
-        <div class="gen_text" id="gen">
-          <h1>- Όλες οι γλώσσες με 35€ το μήνα!(Αρχάριοι) </h1>
-
 		</div>
-		<button class="kids_offers" onclick="kid()">
+        <div class="gen_text">
+          	<p>- Όλες οι γλώσσες με 35€ το μήνα!(Αρχάριοι) </p>
+		</div>
+		<div class="kids_offers">
 			<h2>Για μαθητές</h2>
-		</button>
-		<div class="kids_text" id="kids">
-		<h1>- A junior και B junior με 150€ ανά τάξη έως 31 Αυγούστου! <br>
-			- Για δεύτερη ξένη γλώσσα 50% έκπτωση  για όλους τους καινούριους μαθητές μας! <br>
-			- Για όλα τα μέλη της ίδιας οικογένειας 50% έκπτωση για όλους τους καινούριους μαθητές μας!
-		</h1>
-
 		</div>
-
-        <button class="students_offers" onclick="stud()">
+		<div class="kids_text">
+			<p>- A junior και B junior με 150€ ανά τάξη έως 31 Αυγούστου!</p>
+			<p>- Για δεύτερη ξένη γλώσσα 50% έκπτωση  για όλους τους καινούριους μαθητές μας!</p>
+			<p>- Για όλα τα μέλη της ίδιας οικογένειας 50% έκπτωση για όλους τους καινούριους μαθητές μας!</p>
+		</div>
+        <div class="students_offers">
 			<h2>Για φοιτητές</h2>
-        </button>
-        <div class="students_text" id="stud">
-		  <h1>- - Lower(B1-B2) 48€ μηνιαίως!<br>
-			- Proficiency(C1-C2) 55€ μηνιαίως!<br>
-			- TOEFL, GMAT, GRE με 50€ το μήνα! <br>
-			- IELTS σε ένα μήνα με 50€. <br>
-		</h1>
-            
+		</div>
+        <div class="students_text">
+			<p>- Lower(B1-B2) 48€ μηνιαίως!</p>
+			<p>- Proficiency(C1-C2) 55€ μηνιαίως!</p>
+			<p>- TOEFL, GMAT, GRE με 50€ το μήνα!</p>
+			<p>- IELTS σε ένα μήνα με 50€.</p>
         </div>
-
-        <button class="adults_offers" onclick="adul()">
+        <div class="adults_offers">
 			<h2>Για ενήλικες-εκπαιδευτικούς και δημοσίους υπαλλήλους</h2>
-        </button>
-        <div class="adults_text" id="adul">
-		  <h1>- Άμεση μοριοδότηση σε διαγωνισμούς ΑΣΕΠ. <br>
-			- Lower(B1-B2) 48€ μηνιαίως!<br>
-			- Proficiency(C1-C2) 55€ μηνιαίως!<br>
-			</h1>
-
+		</div>
+        <div class="adults_text">
+			<p>- Άμεση μοριοδότηση σε διαγωνισμούς ΑΣΕΠ. </p>
+			<p>- Lower(B1-B2) 48€ μηνιαίως!</p>
+			<p>- Proficiency(C1-C2) 55€ μηνιαίως!</p>
         </div>
-
-        <button class="summer_offers" onclick="summ()">
-			<h2>Καλοκαιρινές</h2>
-        </button>
-        <div class="summer_text" id="summer">
-          <h1>- Για όλους τους νέους μαθητές μας: </h1>
-            
-        </div>
-
-				<br><br><br>
+		<br><br><br>
     </main>
 
     <footer>
@@ -80,53 +62,7 @@
 	</footer>
 	
     <script src="../js/menu.js"></script>
-    <script>
-		function gen() {
-			var x = document.getElementById("gen");
-			if (x.style.display === "grid") {
-				x.style.display = "none";
-			}
-			else {
-				x.style.display = "grid";
-			}
-	}
-	function kid() {
-			var x = document.getElementById("kids");
-			if (x.style.display === "grid") {
-				x.style.display = "none";
-			}
-			else {
-				x.style.display = "grid";
-			}
-    }
-    function stud() {
-			var x = document.getElementById("stud");
-			if (x.style.display === "grid") {
-				x.style.display = "none";
-			}
-			else {
-				x.style.display = "grid";
-			}
-    }
-    function adul() {
-			var x = document.getElementById("adul");
-			if (x.style.display === "grid") {
-				x.style.display = "none";
-			}
-			else {
-				x.style.display = "grid";
-			}
-    }
-    function summ() {
-			var x = document.getElementById("summer");
-			if (x.style.display === "grid") {
-				x.style.display = "none";
-			}
-			else {
-				x.style.display = "grid";
-			}
-		}
-    </script>
+
 	
 </body>
 </html>

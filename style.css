@@ -253,7 +253,7 @@ main {
     text-align: center;
     font-size: 28px;
     padding: 20px;
-    width: 300px;
+    width: 600px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -290,7 +290,42 @@ main {
     font-size: 25px;
 }
 
+.collage {
+    display: grid;
+    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-rows: 10px auto 50px;
+    grid-template-areas: 
+    ". . ."
+    ". photos ."
+    ". . .";
+}
 
+.photos {
+    grid-area: photos;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1500px 1fr;
+    grid-template-rows: 50px auto 100px; 
+    grid-template-areas: 
+    ". . ."
+    ". slideshow_container ."
+    ". . ."    ;
+    justify-self: center;
+}
+
+.slideshow_container {
+    grid-area: slideshow_container;
+    position: block;
+    margin: auto;
+    width: 1000px;
+    justify-self: center;
+}
+
+img {
+    vertical-align: middle;
+    margin: auto;
+    height: 700px;
+}
 /* ##################################################################### */
 /* #                            MOBILE                                 # */
 /* ##################################################################### */
@@ -390,6 +425,10 @@ main {
 
     .more a {
         font-size: 20px;
+    }
+
+    img{
+        height: 250px;
     }
 
 }
