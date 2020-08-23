@@ -27,4 +27,8 @@ document.write("<img class=\"ph\" src=\"\/icons\/phoneIcon.png\" alt=\"phone\">"
 document.write("Τηλέφωνο: 24210 31162 <br> Κιν: 6909388578<\/p>");
 document.write("");
 document.write("<\/div>");
+document.write("<br>");
+document.write("<div class=\"copy\">");
+document.write("                <p>Copyright &copy; 2020  Ξενόγλωσση παιδεία - Φροντιστήρια Ξένων Γλωσσών Βόλος - Κέντρα Ξένων Γλωσσών<\/p>");
+document.write("            <\/div>");
 document.write("<\/div>");

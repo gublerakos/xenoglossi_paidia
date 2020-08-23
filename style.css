@@ -386,24 +386,6 @@ img {
         font-size: 20px;
     }
 
-    .info{
-        grid-template-columns: 10px auto 10px;
-        grid-template-areas:
-        ". information .";
-    }
-    .programms{
-        display: none;
-    }
-    .information{
-        text-align: center;
-        font-size: 15px;
-    }
-
-    .loc, .ph, .em{
-        width: 20px;
-        height: 20px;
-    }
-
     .modal-content {
         width: 75%;
         padding: 15px;
