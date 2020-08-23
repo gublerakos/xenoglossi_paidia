@@ -21,8 +21,8 @@
     padding: 5px;
 	justify-self: center;
     text-align: center;
-    display: grid;
-    grid-template-rows: 65px 80px 25px auto;
+    /* display: grid; */
+    /* grid-template-rows: 65px 80px 25px auto;
     grid-template-columns: 30px auto 30px;
     grid-template-areas: 
     ". title2 ."
@@ -37,16 +37,16 @@
     ". adults_offers ."
     ". adults_text ."
     ". summer_offers ."
-    ". summer_text .";
+    ". summer_text ."; */
 }
 
 .title2{
-    grid-area: title2;
+    /* grid-area: title2; */
 	font-size: 45px;
 	padding: 10px;
 }
 .title_text{
-    grid-area: title_text;
+    /* grid-area: title_text; */
 	font-size: 25px;
 	padding: 10px;
 }
@@ -55,15 +55,17 @@
     background-color: rgb(252,143,68);
     font-size: 25px;
     width: 70%;
-    justify-self: center;
-    height: 80px;
-}
-
-.gen_offers h2, .kids_offers h2, .students_offers h2, .adults_offers h2{
+    margin: 0 auto;
+    padding: 15px 0;
     margin-top: 23px;
+    height: auto;
 }
 
-.gen_offers{
+/* .gen_offers h2, .kids_offers h2, .students_offers h2, .adults_offers h2{
+    margin-top: 23px;
+} */
+
+/* .gen_offers{
     grid-area: gen_offers;
 }
 .kids_offers{
@@ -74,17 +76,19 @@
 }
 .adults_offers{
     grid-area: adults_offers;
-}
+} */
 
 .kids_text, .students_text, .adults_text, .gen_text {
     width: 70%;
+    padding: 10px 0;
+    margin: 0 auto;
     justify-self: center;
     display: grid;
     position: relative;
     background-color: rgba(252,143,68, 0.4);
     justify-content: center; 
 }
-
+/* 
 .gen_text{
     grid-area: gen_text;
 }
@@ -96,7 +100,7 @@
 }
 .adults_text{
     grid-area: adults_text;
-}
+} */
 
 .adults_text p, .gen_text p, .kids_text p, .students_text p {
     font-size: 23px;
@@ -118,8 +122,8 @@
         font-size: 30px;
     }
     .content{
-        padding: 0;
-        width: 96%;
+        padding: 5px;
+        width: 95%;
         grid-template-columns: 5px auto 5px;
         /* grid-template-rows: auto 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px 10px 60px; */
         grid-template-rows: auto;
