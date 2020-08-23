@@ -76,6 +76,8 @@ img {
     grid-area: english;
     background-color: rgb(252,143,68);
     cursor: pointer;
+    padding: 25px;
+    font-weight: bold;
 }
 .eng_text {
     width: 75%;
@@ -88,6 +90,8 @@ img {
     grid-area: french;
     background-color: rgb(252,143,68);
     cursor: pointer;
+    padding: 25px;
+    font-weight: bold;
 }
 .fre_text {
     width: 75%;
@@ -100,6 +104,8 @@ img {
     grid-area: german;
     background-color: rgb(252,143,68);
     cursor: pointer;
+    padding: 25px;
+    font-weight: bold;
 }
 .ger_text {
     width: 75%;
@@ -112,6 +118,8 @@ img {
     grid-area: spanish;
     background-color: rgb(252,143,68);
     cursor: pointer;
+    padding: 25px;
+    font-weight: bold;
 }
 .spa_text {
     width: 75%;
@@ -124,6 +132,8 @@ img {
     grid-area: italian;
     background-color: rgb(252,143,68);
     cursor: pointer;
+    padding: 25px;
+    font-weight: bold;
 }
 .ita_text{
     width: 75%;
@@ -136,6 +146,8 @@ img {
     grid-area: turkish;
     background-color: rgb(252,143,68);
     cursor: pointer;
+    padding: 25px;
+    font-weight: bold;
 }
 .tur_text {
     width: 75%;
@@ -148,6 +160,8 @@ img {
     grid-area: russian;
     background-color: rgb(252,143,68);
     cursor: pointer;
+    padding: 25px;
+    font-weight: bold;
 }
 .russ_text {
     width: 75%;
@@ -160,15 +174,13 @@ img {
     grid-area: chinese;
     background-color: rgb(252,143,68);
     cursor: pointer;
+    padding: 25px;
+    font-weight: bold;
 }
 .chi_text {
     width: 75%;
     justify-self: center;
     grid-area: chi_text;
-}
-
-.english h2, .french h2, .german h2, .spanish h2, .italian h2, .turkish h2, .russian h2, .chinese h2{
-    padding: 25px;
 }
 
 .english, .french, .german, .spanish, .italian, .turkish, .russian, .chinese{
