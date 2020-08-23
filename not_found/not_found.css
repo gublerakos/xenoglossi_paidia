@@ -1,0 +1,61 @@
+
+.title {
+	display: none;
+}
+
+
+.content {
+  background-color: white;
+  width: 85%;
+  height: calc(100vh - 395px);
+  margin: 20px auto;
+  display: grid;
+  /* justify-content: center; */
+  /* align-content: center; */
+  text-align: center;
+  grid-template-areas: 
+  ". warning_image warning .";
+}
+
+.warning {
+  grid-area: warning;
+  margin-top: 40px;
+  align-self: center;
+}
+
+.warning h2 {
+  font-size: 35px;
+}
+.warning h1 {
+  font-size: 50px;
+  color: #f4511e;
+}
+.warning_image {
+  grid-area: warning_image;
+  align-self: center;
+  height: auto;
+  height: 350px;
+}
+
+
+/* ##################################################################### */
+/* #                            MOBILE                                 # */
+/* ##################################################################### */
+
+@media screen and (max-width: 824px){
+	.title {
+		display: block;
+  }
+
+  .content {
+    width: 96%;
+    grid-template-areas: 
+    "warning" 
+    "warning_image";
+  }
+
+  .warning_image {
+    height: 250px;
+  }
+
+}
