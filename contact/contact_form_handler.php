@@ -13,7 +13,7 @@
 
 
 
-    $email_to = "mariaapntz@gmail.com, nickhatzivag@gmail.com";
+    $email_to = "xenoglossipaideia@gmail.com";
 
     $headers = "From: $email_from \r\n";
 
